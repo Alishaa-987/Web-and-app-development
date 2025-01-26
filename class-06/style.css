@@ -1,0 +1,49 @@
+/* 
+                h1{
+                    color: blueviolet;
+                    background-color: darksalmon;
+                   }
+                    #heading-1{
+                        color: brown;
+                        background-color: blueviolet;
+                    }
+                    .head1{
+                        color: dimgrey;
+                        background-color: forestgreen;
+
+                    }
+
+    
+<h1 id = "heading-1">hello here</h1>
+<h1 class = "head1">hiiiiiiiiiii</h1> */
+
+h1,h2,h3{
+    color: blue;
+    background-color: coral;
+}
+  
+
+   .head-1,.head-2,.head-3{
+    color: rgb(103, 6, 6);
+    background-color: black;
+    font-size: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    border: 10px  solid red;
+   }
+   /* by default the paragraph tag has font size is 16px */
+
+   /* if we need to have given the styling to some heading we use the section and then the h1 and so onnnn */
+   /* padding
+   is something that is give in inside the elemts  */
+
+   body{
+    background-color: crimson;
+   }
+   
