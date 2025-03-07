@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- if we give style tag in head section then before page uploading the style upload -->
+     <style>
+        .Navbar{
+            list-style: none;
+            background-color: aqua;
+            padding: 10px;
+            text-transform: capitalize;
+            text-align: center;
+            width : 50%;
+            margin : 0% auto;            
+        }
+        
+        li{
+            display: inline;
+            padding: 10px;
+            background-color: rgb(34, 11, 55);
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+          a:hover{
+            color: blueviolet;
+        }
+     </style>
+</head>
+<!-- if we give styling in that it take time to it load after page load so good way is in head section -->
+<body>
+    <!-- for making the nav bar we use ul and  -->
+    
+    <header>
+    <ul class="Navbar">
+        <li><a href="../class06/index.html">Home</a></li>
+        <li><a href="../class07/index.html">about</a></li>
+        <li><a href="../class08/index.html">register</a></li>
+        <li><a href="../class09/index.html">login</a></li>
+    </ul>
+    </header>
+    <div>
+        <ul>
+            <li><h1>TOP TUTORIAl</h1></li>
+            <li><a href="/">HTML</a></li>
+            <li><a href="/">CSS</a></li>
+            <li><a href="/">JS</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
+<!-- list is block elemetn and we have to make it in the same line so we convert it in the inline elememnt -->
+<!-- we make li on the inline element not fulll ul -->
+
+<!--ul is a div right now so we give background color to the whole ul -->
