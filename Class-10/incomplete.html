@@ -3,74 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task no 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Why Choose Us</title>
     <style>
-        body{
-            background-color:white;
-            border: 1px solid black;
-            
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
         }
-        #main-div{
-           font-size: 50px;
-           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .main-container {
+            display: flex;
+            width: 90%;
+            background-color: white;
+        }
+        .text-section {
+            width: 50%;
+            padding: 50px;
+        }
+        .text-section h2 {
+            font-size: 40px;
+        }
+        .text-section p {
+            font-size: 18px;
+            color: #555;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
 
+        .feature {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            background: #f3f3f3;
+            padding: 15px;
+            border-radius: 8px;
         }
-        #lower{
-            /* border: 1px solid black; */
-            font-size: 25px;
-            margin-right: 100px;
-            padding-right: 600px;
-            text-align: left;
-
+        .feature i {
+            font-size: 24px;
+            color: brown;
+            margin-right: 10px;
         }
-        .container{
-            /* border: 1px solid black; */
-            display: inline-block;
-            text-align: justify;
-            margin-left: 50px;
-            font-size: 25px;
-            padding: 40px;
-            
-
-            
+        .feature b {
+            margin-left: 5px;
         }
-        .why{
-            display: flex-inline;
-            background-color: grey;
-        } 
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
-    <div class="why">
-    <div >
-        <h2 id="main-div"><b>Why choose US_</b></h2>
-        <p id="lower">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo, voluptate recusandae impedit voluptas laudantium cupiditate, dolore quis dolorem placeat tempore architecto fuga pariatur laborum voluptatibus repellendus earum ea enim.</p>
-
+    <div class="main-container">
+        <div class="text-section">
+            <h2>Why Choose Us_</h2>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Quality<b> Services</b></span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Creative<b> Designers</b></span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>Free<b> Consultation</b></span>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Customer<b> Support</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="./book.png" alt="Workplace">
+        </div>
     </div>
-    <div class="container">
-        <p>Quality</p>
-        <b>Services</b>
-    </div>
-
-    <div class="container">
-       <p> Creative</p>
-       <b>Designers</b>
-    </div>
-    <br>
-    <br>
-
-    <div class="container">
-        <p>Free</p>
-        <b>Consultataion</b>
-    </div>
-
-    <div class="container">
-        <p>Customer</p>
-        <b>Support</b>
-    </div>
-</div>
 </body>
 </html>
-<!--justify content  means space in the cards 
-flex wrap ????
-we have to take things in cneter and  -->
