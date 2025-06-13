@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = ("how are you");
+        console.log(str.charAt(0).toUpperCase() + str.slice(1));
+
+
+        let string = "HelloWorld";
+        let ans = string.slice(1 , 5);
+        console.log(ans)
+
+
+        let strr = "code" ;
+        for( let val of strr){
+            console.log(val);
+        }
+
+        
+        function getlastchars (str , n){
+            return str.slice(-n);
+        }
+
+        let result = getlastchars("developer", 4);
+            console.log(result);
+
+        function trim (sentence){
+            return sentence.trim().split(" ").length;
+        }
+        let res = trim ("JavaScript is fun to learn");
+        console.log(res);
+
+            
+    </script>
+</body>
+</html>
