@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Product Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      width: 250px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .card p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .card p strong {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Products</h1>
+  <div class="card-container"></div>
+
+  <script>
+    var products = [
+      {
+        id: 1,
+        name: "Product no 01",
+        description: "High-quality product with modern features.",
+        price: 29.99,
+        currency: "USD",
+        inStock: true,
+        category: "Electronics",
+        tags: ["gadget", "tech", "new"]
+      },
+      {
+        id: 2,
+        name: "Product no 02",
+        description: "Durable and affordable item for everyday use.",
+        price: 15.50,
+        currency: "USD",
+        inStock: false,
+        category: "Home & Kitchen",
+        tags: ["kitchen", "daily-use"]
+      }
+    ];
+
+    var container = document.getElementsByClassName("card-container")[0];
+    var allCards = "";
+
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+
+      var card = "<div class='card'>";
+      card += "<h2>" + product.name + "</h2>";
+      card += "<p>" + product.description + "</p>";
+      card += "<p><strong>Price:</strong> " + product.currency + " " + product.price + "</p>";
+      card += "<p><strong>Category:</strong> " + product.category + "</p>";
+      card += "<p><strong>Available:</strong> " + (product.inStock ? "Yes" : "No") + "</p>";
+      card += "<p><strong>Tags:</strong> " + product.tags.join(", ") + "</p>";
+      card += "</div>";
+
+      allCards += card;
+    }
+
+    container.innerHTML = allCards;
+  </script>
+
+</body>
+</html>
