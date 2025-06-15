@@ -7,13 +7,33 @@
 </head>
 <body>
     <script>
-        let str = ("how are you");
-        console.log(str.charAt(0).toUpperCase() + str.slice(1));
+        // let str = ("how are you");
+        // console.log(str.charAt(0).toUpperCase() + str.slice(1));
 
 
-        let string = "HelloWorld";
-        let ans = string.slice(1 , 5);
-        console.log(ans)
+        // let string = "HelloWorld";
+        // let ans = string.slice(1 , 5);
+        // console.log(ans)
+
+
+
+
+//       second method 
+        // let originalString = "how are you";
+        // let strrr = orignalString.charAt(0).toUpperCase() + orignalString.slice(1);
+        //  strrr = originalString.replace("ow are you", "Hello");
+        // console.log(strrr); 
+
+
+        let originalString = "how are you";
+        // Step 1: Capitalize first character
+        let capitalized = originalString.charAt(0).toUpperCase() + originalString.slice(1); // "How are you"
+        // Step 2: Replace "ow are you" with "ello"
+        let finalString = capitalized.replace("ow are you", "ello"); // "Hello"
+        console.log(finalString); // Output: Hello
+
+
+
 
 
         let strr = "code" ;
@@ -31,11 +51,12 @@
 
         function trim (sentence){
             return sentence.trim().split(" ").length;
+ 
         }
         let res = trim ("JavaScript is fun to learn");
         console.log(res);
 
             
     </script>
-</body>
+</body>l
 </html>
